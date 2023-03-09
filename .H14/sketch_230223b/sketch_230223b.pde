@@ -1,10 +1,12 @@
 import processing.sound.*;
-
 SoundFile file;
 
 void setup() {
-  file = new SoundFile(this, "audio/arcade.wav");
-  file.rate(1);
-  file.amp(1);
+
+  // Load a soundfile from the /data folder of the sketch and play it back
+  file = new SoundFile(this, "arcade.wav");
   file.play();
-}    
+}      
+
+void draw() {
+}
